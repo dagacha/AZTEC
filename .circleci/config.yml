@@ -172,7 +172,8 @@ workflows:
                     - test
                 filters:
                     branches:
-                        ignore: gh-pages
+                        only:
+                            - develop
             - docs:
                 requires:
                     - lint
